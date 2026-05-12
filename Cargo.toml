@@ -1,17 +1,9 @@
 [package]
 name = "detect_human_by_cloud"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
-reqwest = { version = "0.13", features = [
-    "blocking",
-    "json",
-    "multipart",
-    "rustls"
-] }
-
-serde = { version = "1", features = ["derive"] }
+reqwest = { version = "0.13", features = ["blocking", "json", "rustls"] }
 serde_json = "1"
-clap = { version = "4", features = ["derive"] }
 base64 = "0.22"
