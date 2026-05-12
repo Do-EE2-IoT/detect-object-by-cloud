@@ -1,33 +1,21 @@
-// detect_person_gemini.rs
-//
-// Detect người trong ảnh sử dụng Google Gemini API (FREE)
-// Rust version
-//
-// =======================
-// Cài dependency:
-// =======================
-//
-// cargo add reqwest --features blocking,json,multipart,rustls-tls
-// cargo add serde --features derive
-// cargo add serde_json
-// cargo add clap --features derive
-// cargo add base64
-//
-// =======================
-// Chạy:
-// =======================
-//
-// export GEMINI_API_KEY="your_key"
-//
-// cargo run -- --image image.jpg
-// cargo run -- --image https://example.com/image.jpg
-//
-// Hoặc:
-//
-// cargo run
-//
-<!-- 
-Running `target/release/detect_human_by_cloud --image resource/image.jpg --api-key  ********`
+# Detect Human By Cloud (Google Gemini API)
+
+Detect người trong ảnh sử dụng Google Gemini API bằng Rust.
+
+Hỗ trợ:
+- Ảnh local
+- URL ảnh online
+- Phân tích số lượng người
+- Độ tin cậy
+- Mô tả ngắn bằng tiếng Việt
+
+---
+
+# Demo
+
+```bash
+Running `target/release/detect_human_by_cloud --image resource/image.jpg --api-key ********`
+
 📁 Đọc ảnh local: resource/image.jpg
 🚀 Đang gửi ảnh lên Google Gemini...
 
@@ -46,4 +34,5 @@ Running `target/release/detect_human_by_cloud --image resource/image.jpg --api-k
 PERSON_DETECTED: YES
 COUNT: 8
 CONFIDENCE: HIGH
-DESCRIPTION: Một nhóm tám người đa dạng, tươi cười và đứng cùng nhau trong một không gian văn phòng -->
+DESCRIPTION: Một nhóm tám người đa dạng, tươi cười và đứng cùng nhau trong một không gian văn phòng.
+=======================================================
